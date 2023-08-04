@@ -26,8 +26,7 @@ public class Main {
             filtered.forEach(System.out::println);
         }else {
             List<String> list1 = list.stream()
-                    .filter(s1 -> s1.charAt(0) == s.charAt(0) &&
-                            s1.length() == s.length())
+                    .filter(s1 -> s1.length() == s.length())
                     .toList();
             if(list1.size()<2){
                 list1.forEach(System.out::println);
@@ -35,9 +34,9 @@ public class Main {
             }
 
             Map<String,Integer> map = new LinkedHashMap<>();
-            for (int j=1;j<list1.size();j++) {
-                int a=1;
-                for (int i = 1; i < list1.get(j).length(); i++) {
+            for (int j=0;j<list1.size();j++) {
+                int a=0;
+                for (int i = 0; i < list1.get(j).length(); i++) {
                     if(list1.get(j).charAt(i)==s.charAt(i)){
                         a++;
                     }
