@@ -1,7 +1,6 @@
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-
         List<String> list = new java.util.LinkedList<>();
         list.add("Ali");
         list.add("Oai");
