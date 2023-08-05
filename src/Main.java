@@ -15,7 +15,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ism kiriting");
         String s = scanner.nextLine();
-       filterData(list,"gohil").forEach(System.out::println);
+       filterData(list,s).forEach(System.out::println);
     }
     private static Set<String> filterData(List<String> list, String s){
         Set<String> res=new LinkedHashSet<>();
